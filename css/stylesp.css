@@ -1,5 +1,9 @@
-
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
 body
 {
     background:#f4f4f4;
@@ -71,11 +75,26 @@ header
 
 .mezcalCf .imgCf
 {
-    padding: 40px;
-    margin: 90px;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 140px;
     width: 50%;
     
+    
 }
+
+/* acomodo del producto de crema de mezcal coco*/
+
+.nombreTrab > .boton
+{
+    margin-top: 3rem;
+}
+
+.nombreTrab > p
+{
+    margin-top: 10px;
+}
+
 .Contenedor
 {
     padding: 2rem;
@@ -85,35 +104,40 @@ header
     gap: 2rem;
 }
 
-/* Diseño de imagenes */
-
-.productos .imgProducto
-{
-    width: 40%;
-    margin: 30px;
-    margin-left: 100px;
+/*Contenedor de productos abajo */
+.prod img{
+    width: 150px;
+	height: 160px;
+    margin-top: -50px;
+	margin-left:35px;
+   
 }
 
-.productos .contenedorImg
+/*
+.prod
 {
-    position: relative;
-
-}
-
-.text > h1
-{
-    color: #000;
+    margin: 1em;
+    padding: 1em;
+    color: #fff;
     float: left;
- 
 }
-.text >h3
+
+
+.container-prod
 {
-    color: #000;
+    width: 100%;
+	display: flex;
+	max-width: 1080px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+
 }
-.text >p
-{
-    color: #000;
-}
+*/
+
+
 .boton #carrito
 {
     color: #E5DCC8;
@@ -134,7 +158,7 @@ header
     color: #E5DCC8;
     text-decoration: none;
     text-align: center;
-    font-family:monospace;
+    font-family: 'Roboto';
     
    
     width: 25%;
@@ -147,15 +171,7 @@ header
 
 /* parte inferior*/
 
-.Contenedor2
-{
-    width: 100%;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    gap: 2rem;
-}
+
  .productos .btn
 {
     width: 10px;
@@ -177,6 +193,116 @@ header
     position: relative;
 }
 
+
+/* buscar */
+
+.box 
+{
+    position: absolute;
+    top: 7%;
+    left: 70%;
+    
+    transform: translate(-50%, -50%);
+}
+input.src
+{
+    padding: 9px 10px 9px 32px;
+}
+
+/* seccion de los productos*/
+
+/*Cards*/
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	color: #2D2427;
+    line-height: 46.88px;
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+    margin: 20px;
+	width: 88%;
+	height:340px;
+}
+.card .contenido-card{
+	padding: 15px;
+	
+}
+/* titulo de los productos */
+.card .contenido-card h3{
+	margin-bottom: 4px;
+	color: #2D2427;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.13px;
+    
+
+}
+.card .contenido-card p{
+	line-height: 28.13px;
+	color: #2D2427;
+	font-size: 18px;
+	margin-bottom: 3px;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 5px;
+	text-decoration: none;
+	color: #2D2427;
+	border: 1px solid #2D2427;
+	border-radius: 2px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+
+/* Centrar */
+    display: flex;
+    justify-content: center;
+    
+}
+.card .contenido-card a:hover{
+	background: #2D2427;
+	color: #fff;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+/*Fin-Cards*/
 
 
 
